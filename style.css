@@ -355,7 +355,6 @@ header {
     justify-content: center; 
     align-items: flex-start; 
     height: 100vh; 
-    overflow-y: auto;
     margin-top: 0;
     padding-top: 0;
     width: 100%; 
@@ -405,13 +404,14 @@ header {
     flex-direction: column; 
     align-items: center; 
     padding-bottom: 20px;
+    justify-content: center;
 }
 
 .photo-cell img {
     width: auto; 
     height: auto; 
     max-width: 100%; 
-    margin-bottom: 0;
+    margin: 25px;
 }
 
 .photo-cell a {
@@ -424,4 +424,15 @@ header {
 .photo-cell a:hover {
     color: #000000; 
     background-color: #ffffff;
+}
+.video-container video {
+    width: 100%; 
+    height: auto; 
+    object-fit: contain; 
+}
+.custom-video {
+    width: 60%;
+    height: auto; 
+    object-fit: contain; 
+    margin: 20px;
 }
