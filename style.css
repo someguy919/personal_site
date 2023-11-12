@@ -8,7 +8,19 @@ body, html {
     margin: 0;
     padding: 0;
 }
-
+p {
+    color: white;
+}
+h1 {
+    font-size: 50px;
+}
+.title {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 250px;
+    margin-bottom: 0;
+    padding: 0;
+}
 header {
     position: fixed;
     top: 0;
@@ -334,4 +346,70 @@ header {
         font-size: .7vh; 
     }
 }
+.container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+    overflow-y: auto;
+    margin-top: 0;
+    padding-top: 0;
+    width: 100%; /* Ensures it spans the full width of the viewport */
+}
 
+.flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1600px; /* Maximum width for the grid */
+    margin-left: auto; /* Centers the grid horizontally */
+    margin-right: auto; /* Centers the grid horizontally */
+    /* Other styles... */
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+.cell {
+    flex: 0 0 50%; /* Each cell takes up 50% of the width */
+    box-sizing: border-box;
+    /* Other styles... */
+}
+
+/* Force a new line after every two cells */
+.flex-grid .cell:nth-child(2n) {
+    margin-right: 0; /* Remove any margin if added to the right of each cell */
+}
+
+.flex-grid .cell:nth-child(2n + 1) {
+    clear: left; /* This will push every 3rd cell (and thus the 4th) to a new line */
+}
+
+.flex-grid .cell:nth-child(1),
+.flex-grid .cell:nth-child(2) {
+    border-bottom: 2px solid #ffffff; /* Add a line at the bottom of the first and second cells */
+}
+
+
+.row {
+    display: flex;
+    width: 100%; /* Ensures each row spans the full width of the flex-grid */
+}
+.text-cell {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center; /* Center text lines */
+}
+
+.photo-cell {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.photo-cell img {
+    width: auto; /* Adjust width as needed, or set to auto */
+    height: auto; /* Keep the original aspect ratio */
+    max-width: 100%; /* Ensures the image does not overflow its container */
+}
