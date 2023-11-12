@@ -5,9 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Site - Home</title>
     <link rel = "stylesheet" href = "style.css"/>
+    <script src="script.js"></script>
 </head>
 <body>
-    <h1>My Personal Site</h1>
-    
+<header class="homepage-header">
+    <!-- Video Menu Bar that im not sure if it will work-->
+    <div class="login-message">
+        Last login: <span id="last-login-date"></span>
+      </div>
+    <img src="./terminal.png" class="header-background">
+    <video class="header-video" autoplay muted>00>
+        <source src="./cursor_2ndtry.webm" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+        <div class="video-grid">
+            <a href="home.html" class="video-link">
+                <video id="video1" class="video" autoplay muted>
+                    <source src="./home_4.webm" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <img src="./home_selected.png" alt="Home" class="hover-image"/>
+            </a>
+            <a href="about.html" class="video-link">
+                <video id="video2" class="video" autoplay muted>
+                    <source src="./about_4.webm" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <img src="./about_selected.png" alt="Home" class="hover-image"/>
+            </a>
+             <a href="portfolio.html" class="video-link">
+                <video id="video3" class="video" autoplay muted>
+                <source src="./portfolio_4.webm" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <img src="./portfolio_selected.png" alt="Home" class="hover-image"/>
+            </a>
+        </div>
+</header>
+<div class="video-background">
+    <video autoplay muted id="bgVideo">
+        <source src="./smash_screen_use_me.webm" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+</div>
 </body>
 </html>
