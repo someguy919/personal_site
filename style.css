@@ -404,12 +404,30 @@ header {
 
 .photo-cell {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack the image and the link vertically */
+    align-items: center; /* Center align items */
+    /* Other styles... */
+    padding-bottom: 20px;
 }
 
 .photo-cell img {
     width: auto; /* Adjust width as needed, or set to auto */
     height: auto; /* Keep the original aspect ratio */
     max-width: 100%; /* Ensures the image does not overflow its container */
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.photo-cell a {
+    color: #ffffff; /* Set the link color */
+    text-decoration: none; /* Optional: Removes underline from the link */
+    /* Other styles for the link, if needed */
+    padding-top: 0;
+    margin-top: 0;
+    transition: color 0.3s ease; 
+    padding: 2px;
+}
+.photo-cell a:hover {
+    color: #000000; /* Change color on hover (example: bright green) */
+    background-color: #ffffff;
 }
