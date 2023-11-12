@@ -14,6 +14,10 @@ p {
 h1 {
     font-size: 50px;
 }
+h2{
+    color: white;
+    text-decoration: underline;
+}
 .title {
     text-align: center;
     color: #ffffff;
@@ -348,86 +352,76 @@ header {
 }
 .container {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: flex-start; /* Center vertically */
-    height: 100vh; /* Full height of the viewport */
+    justify-content: center; 
+    align-items: flex-start; 
+    height: 100vh; 
     overflow-y: auto;
     margin-top: 0;
     padding-top: 0;
-    width: 100%; /* Ensures it spans the full width of the viewport */
+    width: 100%; 
 }
 
 .flex-grid {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1600px; /* Maximum width for the grid */
-    margin-left: auto; /* Centers the grid horizontally */
-    margin-right: auto; /* Centers the grid horizontally */
-    /* Other styles... */
+    max-width: 1600px; 
+    margin-left: auto; 
+    margin-right: auto; 
     border-top: 2px solid #ffffff;
     border-bottom: 2px solid #ffffff;
 }
 
 .cell {
-    flex: 0 0 50%; /* Each cell takes up 50% of the width */
+    flex: 0 0 50%; 
     box-sizing: border-box;
-    /* Other styles... */
+    padding: 0;
+    margin: 0;
 }
 
-/* Force a new line after every two cells */
 .flex-grid .cell:nth-child(2n) {
-    margin-right: 0; /* Remove any margin if added to the right of each cell */
+    margin-right: 0;
 }
 
 .flex-grid .cell:nth-child(2n + 1) {
-    clear: left; /* This will push every 3rd cell (and thus the 4th) to a new line */
+    clear: left;
 }
 
 .flex-grid .cell:nth-child(1),
 .flex-grid .cell:nth-child(2) {
-    border-bottom: 2px solid #ffffff; /* Add a line at the bottom of the first and second cells */
-}
-
-
-.row {
-    display: flex;
-    width: 100%; /* Ensures each row spans the full width of the flex-grid */
+    border-bottom: 2px solid #ffffff; 
 }
 .text-cell {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    padding-left: 100px;
-    padding-right: 100px;
-    text-align: center; /* Center text lines */
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 20px; 
+    border: none;
 }
 
 .photo-cell {
     display: flex;
-    flex-direction: column; /* Stack the image and the link vertically */
-    align-items: center; /* Center align items */
-    /* Other styles... */
+    flex-direction: column; 
+    align-items: center; 
     padding-bottom: 20px;
 }
 
 .photo-cell img {
-    width: auto; /* Adjust width as needed, or set to auto */
-    height: auto; /* Keep the original aspect ratio */
-    max-width: 100%; /* Ensures the image does not overflow its container */
-    padding-bottom: 0;
+    width: auto; 
+    height: auto; 
+    max-width: 100%; 
     margin-bottom: 0;
 }
 
 .photo-cell a {
-    color: #ffffff; /* Set the link color */
-    text-decoration: none; /* Optional: Removes underline from the link */
-    /* Other styles for the link, if needed */
-    padding-top: 0;
-    margin-top: 0;
+    color: #ffffff;
+    text-decoration: none; 
     transition: color 0.3s ease; 
     padding: 2px;
 }
+
 .photo-cell a:hover {
-    color: #000000; /* Change color on hover (example: bright green) */
+    color: #000000; 
     background-color: #ffffff;
 }
