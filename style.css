@@ -453,9 +453,19 @@ h5 {
     left: 50%;
     width: 50%;
     transform: translate(-50%, -50%);
+    z-index: 3;
+    pointer-events: none;
+
+}.form-video2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
     z-index: 2;
     pointer-events: none;
 }
+
 
 .form-img{
     position: absolute;
